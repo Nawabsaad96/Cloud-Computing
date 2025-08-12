@@ -1,0 +1,125 @@
+STEP 1: UNDERSTANDING SAAS AND ZOHO CREATOR 
+What is SaaS? 
+• SaaS (Software-as-a-Service) apps run in the cloud—you use 
+them via a browser, no installation needed. 
+• Examples: Gmail, Google Docs, Office 365, Zoho Creator. 
+• What is Zoho Creator? 
+• A “low-code” platform to build cloud apps quickly using 
+forms, drag-and-drop tools, and simple logic. 
+ACTION: 
+Spend 10 minutes reading about SaaS and Zoho Creator basics on 
+their respective sites. 
+STEP 2: CREATE YOUR ZOHO CREATOR ACCOUNT 
+1. Go to Zoho Creator. 
+2. Click Sign Up (top right). 
+3. Enter your email, create a password, and complete signup. 
+4. You may need to verify your email—check your inbox. 
+5. After signup, click Sign In and log in to your new Zoho Creator 
+account. 
+1
+LESSON NOTES GUIDED PROJECT
+ STEP 3: START A NEW APPLICATION 
+1. After login, you’re on the Zoho Creator Dashboard (it looks 
+empty if it’s your first time). 
+2. Click Create New Application (button or big ‘+’ icon). 
+3. Select Create from Scratch (don’t use a template this time—
+ you’ll learn more this way). 
+4. When prompted, name your app Student Course 
+Management. 
+5. (Optional) Choose an icon and color for your app for easy 
+identification. 
+6. Click Create or Continue to enter the app builder. 
+STEP 4: DESIGN THE DATA MODEL BY CREATING FORMS 
+In Zoho Creator, a Form = a Table in a database. Each form holds 
+one kind of data. 
+4.1. Create the “Students” Form 
+• Click + New Form. 
+• Name it “Students.” 
+• Add these fields (drag from left panel): 
+• Student Name (Single Line) 
+• Roll Number (Single Line) 
+• Email (Email type) 
+• Department (Dropdown; add options like CSE, IT, ECE, 
+etc.) 
+• Click Done or Save. 
+4.2. CREATE THE “COURSES” FORM 
+• Again, click + New Form. 
+• Name it “Courses.” 
+• Add: 
+• Course Name (Single Line) 
+• Course Code (Single Line) 
+2
+LESSON NOTES GUIDED PROJECT
+ • Instructor (Single Line) 
+• Semester (Dropdown; options: 1, 2, 3, 4, etc.) 
+• Save the form. 
+4.3. CREATE THE “ENROLLMENTS” FORM 
+• Click + New Form one more time. 
+• Name it “Enrollments.” 
+• Add: 
+• Student (Lookup field; look up from “Students”) 
+• Course (Lookup field; look up from “Courses”) 
+• Enrollment Date (Date type) 
+• Feedback (Multi Line or use a “Rating” field if available) 
+• Save the form. 
+• (Tip: Lookup fields link forms—this is fundamental in cloud 
+data modeling.) 
+STEP 5: ADD DATA VALIDATION 
+• For Email, choose the “Email” field type for automatic 
+validation. 
+• For Roll Number (Students) and Course Code (Courses): 
+• Click the field in the form builder. 
+• Enable “Unique” to prevent duplicates. 
+Why? 
+This avoids errors and ensures each student/course is only created 
+once. 
+STEP 6: CREATE REPORTS (TO VIEW DATA) 
+• Each form creates a default report (table of all records). 
+• To view: In the builder, click the “Reports” tab under each 
+form. 
+• Try creating a custom report: 
+• Click Add Report. 
+• Select a form, pick “List” or “Summary” view. 
+3
+LESSON NOTES GUIDED PROJECT
+ • Experiment with sorting/filtering (e.g., show enrollments 
+per course). 
+STEP 7: AUTOMATE TASKS WITH WORKFLOWS 
+7.1. Send Confirmation Email after Enrollment 
+• Select the “Enrollments” form. 
+• Go to Workflows > On Success > Add Action > Send Email. 
+• In “To,” choose the Student’s Email field. 
+• Write a message (“Thank you for enrolling in...”). 
+• 7.2. Alert on Low Feedback 
+• In the same “Enrollments” workflow, add a condition: 
+• If Feedback (say, less than 3/5), trigger an alert or email to 
+Instructor. 
+• Use simple drag-and-drop or select ready-made actions. 
+STEP 8: SET UP USER ROLES & ACCESS 
+• Go to Settings > Users & Permissions. 
+• Add user roles: 
+• Admin: Full access. 
+• Instructor: View courses, enrollments, feedback. 
+• Student: View only their enrollments. 
+• Assign forms and reports to roles—control who can “View,” 
+“Add,” or “Edit.” 
+STEP 9: TEST YOUR APPLICATION 
+• Use the Preview feature. 
+• Enter sample data in Students/Courses, then make an 
+Enrollment. 
+• Submit feedback, and check if emails or alerts work. 
+• Try logging in as another role (Instructor/Student) to 
+experience access control. 
+4
+LESSON NOTES GUIDED PROJECT
+ STEP 10: DEPLOY AND SHARE 
+• Click Access this Application (top right). 
+• Use “Share” or “Add Users”—enter classmates’ emails and 
+assign a role. 
+• Your app is now live on the cloud—accessible from anywhere, 
+at any time! 
+STEP 11: GATHER FEEDBACK AND IMPROVE 
+• Ask users (friends, classmates, or faculty) to use your app. 
+• Tweak forms, user roles, and automations based on feedback. 
+• Document your process and challenges for your assignment/
+ report.
