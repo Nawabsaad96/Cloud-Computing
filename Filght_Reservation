@@ -1,0 +1,6 @@
+// Get selected flight
+flight = input.Select_Flight;
+// Get number of seats booked
+seats = input.Number_of_Seats;
+// Subtract booked seats from available seats
+flight.Available_Seats = flight.Available_Seats - seats;
