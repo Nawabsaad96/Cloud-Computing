@@ -1,0 +1,9 @@
+// Send email to admin/owner
+sendmail
+[
+from : zoho.adminuserid
+to : "admin@example.com"
+subject : "New Inquiry Received"
+message : "A new buyer/renter is interested. Name: " +
+input.Name + ", Budget: ₹" + input.Budget
+];
